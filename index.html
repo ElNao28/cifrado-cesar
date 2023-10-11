@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodo-cesar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+    body{
+      background-image: url(./img/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .container{
+      background-color: aliceblue;
+      border-radius: 8px;
+      box-shadow: 0px 0px 30px 6px rgb(57, 57, 231);
+      border: 2px solid rgb(10, 10, 10);
+      margin-top: 10%;
+    }
+    .container input{
+      background-color: rgb(175, 252, 226);
+    }
+  </style>
+  <body class="bg-black">
+    <div class="container py-5">
+        <h5 class="text-black">Ingresa tu Mensaje</h5>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Ingresa tu mensaje"
+          id="msj"
+        />
+        <br>
+        <h5 for="">Numero de desplazamiento</h5>
+        <input type="number" name="" id="dez">
+        <button id="cifrado" class="btn btn-primary mx-2">Incriptar</button>
+        <button id="descifrado" class="btn btn-warning">DesIncriptar</button><br />
+        <br>
+        <h5 class="text-black">Resultado</h5>
+        <input style="background-color: rgb(175, 252, 226);" class="form-control" type="text" id="res" placeholder="Resultado" disabled>
+        <script src="./js/script.js"></script>
+    </div>
+  </body>
+</html>
